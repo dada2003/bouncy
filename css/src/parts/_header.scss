@@ -5,8 +5,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-image: url("../../img/layer-1.png");
-  background-repeat: no-repeat;
+  background: url("../../img/layer-1.png") no-repeat;
   background-size: cover;
 
   &__container {
@@ -16,15 +15,15 @@
     justify-content: space-around;
     align-items: center;
   }
-}
 
-.header__row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: nowrap;
-  margin-bottom: 100px;
-  width: 100%;
+  &__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 100px;
+    width: 100%;
+  }
 }
 
 .menu {
@@ -39,32 +38,28 @@
   //width: 100%;
   list-style: none;
   padding: 0;
+  &__item {
+    padding: 0 10px 0 10px;
+  }
+  &__item--link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 12px;
+    background-color: transparent;
+  }
+  &__item--link:hover {
+    border-radius: 17px;
+    background-color: transparent;
+    color: olivedrab;
+    border: solid 2px white;
+  }
 }
 
 .logo {
   width: 28%;
   text-align: left;
-}
-
-.nav__item {
-  padding: 0 10px 0 10px;
-}
-
-.nav__item--link {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 12px;
-  background-color: transparent;
-}
-
-.nav__item--link:hover {
-  border-radius: 17px;
-  background-color: transparent;
-  color: olivedrab;
-  border: solid 2px white;
-  //outline: 2px solid white;
 }
 
 .codeCafe {
