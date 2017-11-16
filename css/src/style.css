@@ -41,18 +41,17 @@ Header
   width: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-image: url("../../img/layer-1.png");
   background-repeat: no-repeat;
   background-size: cover; }
-
-.header__container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center; }
+  .header__container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
 
 .header__row {
   display: flex;
