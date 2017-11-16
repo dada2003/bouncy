@@ -139,7 +139,8 @@ The Portfolio
 -----------------------------------*/
 .portfolio {
   padding: 80px 0 105px 0;
-  background-color: #f3f3f3; }
+  background-color: #f3f3f3;
+  width: auto; }
   .portfolio__title {
     color: #333b46;
     font-size: 20px;
@@ -188,7 +189,8 @@ The Team
 -----------------------------------*/
 .team {
   padding: 80px 0 105px 0;
-  background-color: #f3f3f3; }
+  background-color: #f3f3f3;
+  width: auto; }
   .team__title {
     color: #333b46;
     font-size: 20px;
@@ -266,7 +268,8 @@ Contact Us
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 41px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  width: auto; }
   .contact__title {
     height: 20px;
     color: #ffffff;
@@ -304,7 +307,8 @@ TESTIMONIALS
 .testimonials {
   background-color: #f3f3f3;
   padding-top: 80px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  width: auto; }
   .testimonials__title {
     color: #333b46;
     font-size: 20px;
