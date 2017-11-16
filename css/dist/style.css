@@ -1,0 +1,426 @@
+/*---------------------------------
+Global
+-----------------------------------*/
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+  background-color: transparent; }
+
+body {
+  font-family: 'Open Sans', 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+/*---------------------------------
+Variables
+-----------------------------------*/
+/*---------------------------------
+Typography
+-----------------------------------*/
+/*---------------------------------
+Mixins
+-----------------------------------*/
+/*---------------------------------
+Header
+-----------------------------------*/
+.header {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../../img/layer-1.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.header__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.header__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 100px;
+  width: 100%; }
+
+.menu {
+  width: 68%; }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding: 0; }
+
+.logo {
+  width: 28%;
+  text-align: left; }
+
+.nav__item {
+  padding: 0 10px 0 10px; }
+
+.nav__item--link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 12px;
+  background-color: transparent; }
+
+.nav__item--link:hover {
+  border-radius: 17px;
+  background-color: transparent;
+  color: olivedrab; }
+
+.codeCafe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 110px; }
+
+.we {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 70px;
+  text-transform: uppercase;
+  /* Text style for "We Are Cod" */
+  letter-spacing: 5px; }
+
+.paragraph {
+  text-align: center;
+  width: 604px;
+  height: 45px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  /* Text style for "A, t vero" */
+  letter-spacing: 0.8px; }
+
+.roundBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.roundBtn button {
+  width: 36px;
+  height: 36px;
+  background-color: #19bd9a;
+  border-radius: 50%;
+  border: none; }
+
+.fa-chevron-down {
+  color: #fff; }
+
+/*---------------------------------
+Menu
+-----------------------------------*/
+/*---------------------------------
+The Portfolio
+-----------------------------------*/
+.portfolio {
+  padding: 80px 0 105px 0;
+  background-color: #f3f3f3; }
+  .portfolio__title {
+    color: #333b46;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 41px; }
+  .portfolio__description {
+    color: #81868e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 81px; }
+
+.button-group {
+  text-align: center;
+  margin-bottom: 75px; }
+
+.is-checked {
+  border-bottom: 2px solid #19bd9a; }
+
+.button {
+  background-color: #f3f3f3;
+  padding: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 12px; }
+
+.button:hover {
+  background: #19bd9a;
+  box-shadow: 0 5px 10px rgba(46, 229, 157, 0.4);
+  color: white;
+  transform: translateY(-2px); }
+
+.grid {
+  height: 100%;
+  margin: 0 auto; }
+
+/*---------------------------------
+The Team
+-----------------------------------*/
+.team {
+  padding: 80px 0 105px 0;
+  background-color: #f3f3f3; }
+  .team__title {
+    color: #333b46;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 41px; }
+  .team__description {
+    color: #81868e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 81px;
+    color: #81868e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center; }
+  .team__slider--items {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right; }
+  .team__slider-des {
+    width: 370px; }
+
+.slider_inn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+::-webkit-scrollbar-button {
+  background-repeat: no-repeat;
+  width: 5px;
+  height: 0px; }
+
+::-webkit-scrollbar-track {
+  background-color: #ecedee; }
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-color: #6dc0c8; }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #56999f; }
+
+::-webkit-resizer {
+  background-repeat: no-repeat;
+  width: 4px;
+  height: 0px; }
+
+::-webkit-scrollbar {
+  width: 4px; }
+
+/*---------------------------------
+Contact Us
+
+-----------------------------------*/
+.contact {
+  height: 210px;
+  background-image: url("../../img/contact.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 45px;
+  color: #333b46;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 41px;
+  margin-bottom: 0; }
+  .contact__title {
+    height: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    /* Text style for "A, lready" */
+    letter-spacing: 0.8px; }
+  .contact__sub {
+    color: #81868e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 15px; }
+  .contact__sub:hover {
+    background-color: aqua;
+    transition: .3s; }
+  .contact__title:hover {
+    color: lightblue;
+    text-shadow: 3px 3px 2px violet, 0 0 1em #ADF;
+    transition: .3s linear; }
+
+.container-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+/*---------------------------------
+TESTIMONIALS
+-----------------------------------*/
+.testimonials {
+  background-color: #f3f3f3;
+  padding-top: 80px;
+  padding-bottom: 100px; }
+  .testimonials__title {
+    color: #333b46;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 41px; }
+  .testimonials__description {
+    color: #81868e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center; }
+  .testimonials__slider--items {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    height: 316px; }
+  .testimonials__founder {
+    color: #19bd9a; }
+
+.slick-dots li button {
+  background-color: #19bd9a;
+  border-radius: 50%;
+  color: transparent; }
+
+.slide-wrap {
+  width: 70%; }
+
+.brad,
+.rob {
+  border-radius: 50%; }
+
+.contacts__title {
+  color: #333b46;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 41px;
+  padding-top: 80px; }
+.contacts__description {
+  color: #81868e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 81px;
+  color: #81868e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center; }
+
+/*---------------------------------
+Map
+-----------------------------------*/
+.map {
+  height: 450px; }
+
+#map {
+  height: 100%; }
+
+/*---------------------------------
+Footer
+-----------------------------------*/
+.footer {
+  height: 140px; }
+  .footer__title {
+    color: #333b46;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 41px;
+    color: #323a45;
+    font-size: 25px;
+    font-weight: bolder; }
+  .footer__sub {
+    text-align: center;
+    height: 14px;
+    color: #81868e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    /* Text style for "C, opyrigh" */
+    letter-spacing: 0.7px; }
+  .footer__socials {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 42px; }
+  .footer__socials--item {
+    border-radius: 50%;
+    background-color: mediumblue;
+    padding: 9px;
+    margin: 15px; }
+  .footer .footer__socials .fa {
+    font-size: 20px;
+    color: white; }
+
+.footer__socials--item:hover {
+  background-color: limegreen; }
+
+/*---------------------------------*/
+
+/*# sourceMappingURL=style.css.map */

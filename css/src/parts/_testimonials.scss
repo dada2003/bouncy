@@ -1,0 +1,33 @@
+.testimonials {
+  background-color: #f3f3f3;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  &__title {
+    @include title-all;
+  }
+  &__description {
+    @include subtitle;
+  }
+  &__slider--items {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    height: 316px;
+  }&__founder{
+       color: #19bd9a
+     }
+}
+.slick-dots li button {
+  background-color: #19bd9a;
+  border-radius: 50%;
+  color: transparent;
+}
+.slide-wrap {
+  width: 70%;
+}
+.brad,
+.rob{
+  border-radius: 50%;
+}

@@ -1,0 +1,53 @@
+.footer {
+  height: 140px;
+  &__title {
+    @include title-all;
+    color: #323a45;
+    font-size: 25px;
+    font-weight: bolder;
+
+  }
+  &__sub {
+    text-align: center;
+    height: 14px;
+    color: #81868e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    /* Text style for "C, opyrigh" */
+    letter-spacing: 0.7px;
+
+  }
+  &__socials {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 42px;
+  }
+  &__socials--item {
+    
+    border-radius: 50%;
+    background-color:mediumblue;
+    padding:9px;
+    margin:15px;
+  }
+  //}&__socials--link{
+  //  //height: 30px;
+  //  //width: 30px;
+  //  //border-radius: 50%;
+  //   //background-color: #3b5998;
+  // }
+  .footer__socials .fa {
+    //background-color: #3b5998;
+    //border-radius: 50%;
+    font-size: 20px;
+    color: white;
+  }
+}
+
+.footer__socials--item:hover {
+  background-color: limegreen;
+
+}
