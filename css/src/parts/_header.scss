@@ -1,21 +1,21 @@
 .header {
-  //padding-top: 3%;
   height: 100vh;
   width: auto;
-  display:flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-image: url("../../img/layer-1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.header__container{
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background-image: url("../../img/layer-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 .header__row {
@@ -63,10 +63,9 @@
   border-radius: 17px;
   background-color: transparent;
   color: olivedrab;
-  border:solid 2px white;
+  border: solid 2px white;
   //outline: 2px solid white;
 }
-
 
 .codeCafe {
 
@@ -86,7 +85,8 @@
   /* Text style for "We Are Cod" */
   letter-spacing: 5px;
 }
-.paragraph{
+
+.paragraph {
   text-align: center;
   width: 604px;
   height: 45px;
@@ -97,19 +97,22 @@
   /* Text style for "A, t vero" */
   letter-spacing: 0.8px;
 }
-.roundBtn{
+
+.roundBtn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.roundBtn button{
+
+.roundBtn button {
   width: 36px;
   height: 36px;
   background-color: #19bd9a;
   border-radius: 50%;
-  border:none;
+  border: none;
 }
-.fa-chevron-down{
+
+.fa-chevron-down {
   color: #fff;
 }
