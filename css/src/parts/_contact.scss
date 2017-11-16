@@ -6,7 +6,6 @@
   padding-top: 45px;
   @include title-all;
   margin-bottom: 0;
-  width: auto;
 
   &__title {
     height: 20px;
@@ -15,9 +14,7 @@
     font-weight: 400;
     line-height: 25px;
     /* Text style for "A, lready" */
-    letter-spacing: 0.8px;
-    //margin-bottom: 30px;
-  }
+    letter-spacing: 0.8px;  }
   &__sub {
     @include subtitle;
     width: 200px;
