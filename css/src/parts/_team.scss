@@ -1,0 +1,67 @@
+.team {
+  padding: 80px 0 105px 0;
+  background-color: #f3f3f3;
+  &__title {
+    @include title-all;
+
+  }
+  &__description {
+    @include subtitle;
+    margin-bottom: 81px;
+    color: #81868e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+
+  }
+  &__slider--items {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+  }&__slider-des{
+  width: 370px;
+     }
+}
+
+.slider_inn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 4px;
+}
+::-webkit-scrollbar-button {
+  //background-image: url('');
+  background-repeat: no-repeat;
+  width: 5px;
+  height: 0px
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ecedee
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-color: #6dc0c8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #56999f;
+}
+
+::-webkit-resizer {
+  //background-image: url('');
+  background-repeat: no-repeat;
+  width: 4px;
+  height: 0px
+}
+
+::-webkit-scrollbar {
+  width: 4px;}
+
+

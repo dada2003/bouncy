@@ -1,0 +1,115 @@
+.header {
+  //padding-top: 3%;
+  height: 100vh;
+  width: auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../../img/layer-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.menu {
+  width: 68%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  //width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.logo {
+  width: 28%;
+  text-align: left;
+}
+
+.nav__item {
+  padding: 0 10px 0 10px;
+}
+
+.nav__item--link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 12px;
+  background-color: transparent;
+}
+
+.nav__item--link:hover {
+  border-radius: 17px;
+  background-color: transparent;
+  color: olivedrab;
+  border:solid 2px white;
+  //outline: 2px solid white;
+}
+
+
+.codeCafe {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 110px;
+}
+
+.we {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 70px;
+  text-transform: uppercase;
+  /* Text style for "We Are Cod" */
+  letter-spacing: 5px;
+}
+.paragraph{
+  text-align: center;
+  width: 604px;
+  height: 45px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  /* Text style for "A, t vero" */
+  letter-spacing: 0.8px;
+}
+.roundBtn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.roundBtn button{
+  width: 36px;
+  height: 36px;
+  background-color: #19bd9a;
+  border-radius: 50%;
+  border:none;
+}
+.fa-chevron-down{
+  color: #fff;
+}

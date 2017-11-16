@@ -1,0 +1,40 @@
+.contact {
+  height: 210px;
+  background-image: url("../../img/contact.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 45px;
+  @include title-all;
+  margin-bottom: 0;
+
+  &__title {
+    height: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    /* Text style for "A, lready" */
+    letter-spacing: 0.8px;
+    //margin-bottom: 30px;
+  }
+  &__sub {
+    @include subtitle;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 15px;
+
+  }&__sub:hover {
+  background-color: aqua;
+  transition:.3s;
+}&__title:hover{
+        color: lightblue;
+        text-shadow: 3px 3px 2px violet, 0 0 1em #ADF;
+        transition: .3s linear;
+      }
+}
+.container-c{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}

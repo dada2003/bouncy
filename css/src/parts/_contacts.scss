@@ -1,0 +1,19 @@
+.contacts {
+
+  &__title {
+    @include title-all;
+    padding-top: 80px;
+
+  }
+  &__description {
+    @include subtitle;
+    margin-bottom: 81px;
+    color: #81868e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+
+  }
+}
+

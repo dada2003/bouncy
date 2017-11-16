@@ -1,0 +1,35 @@
+.portfolio {
+  padding: 80px 0 105px 0;
+  background-color: #f3f3f3;
+  &__title {
+    @include title-all;
+
+  }
+  &__description {
+    @include subtitle;
+    margin-bottom: 81px;
+  }
+
+}
+
+.button-group {
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.is-checked {
+  border-bottom : 2px solid #19bd9a ;
+}
+
+.button {
+  @include btn-porto;
+}
+
+.button:hover {
+  @include for-btn-portfolio-hover;
+}
+
+.grid {
+  height: 100%;
+  margin: 0 auto;
+}
